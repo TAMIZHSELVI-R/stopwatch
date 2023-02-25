@@ -1,6 +1,6 @@
 var seconds = 00;
 var tens = 00;
-var OutputSeconds = document.getElementById('second');
+var OutputSeconds = document.getElementById('seconds');
 var OutputTens = document.getElementById('tens');
 var buttonStart = document.getElementById('btn-start');
 var buttonStop = document.getElementById('btn-stop');
@@ -8,8 +8,8 @@ var buttonReset = document.getElementById('btn-reset');
 var Interval;
 
 buttonStart.addEventListener('click', () => {
-    classinterval(Interval);
-    Intervel = setInterval(startTime, 10);
+    clearInterval(Interval);
+    Interval = setInterval(startTime, 10);
 });
 
 buttonStop.addEventListener('click', () => {
